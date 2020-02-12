@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+
+    <title>CONTACT US</title>
+  </head>
+  <body>
+
+    <nav class="container mt-3 shadow rounded navbar navbar-expand-sm bg-danger navbar-dark text-dark sticky-top">
+      <a class="navbar-brand font-italic" href="https://www.ducati.com/in/en/home" target="_blank">DUCATI</a>
+      <div class="float-right w-100">
+        <ul class="navbar-nav float-right">
+          <li class="nav-item">
+            <a class="nav-link" href="bikes.html">BIKES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">RACING</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">EXPERIENCE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container border shadow rounded mt-5 mb-5 p-5">
+      <h2 class="text-center">CONTACT FORM</h2>
+
+      <form class="form-stacked was-validated" action="action.php" method="post">
+        <div class="form-group">
+          <label for="email">Email : </label>
+          <input class="form-control" type="email" name="email" id="email" placeholder="Enter Email" required/>
+          <div class="valid-feedback">Valid</div>
+          <div class="invalid-feedback">Please fill out this Field ! </div>
+        </div>
+
+        <div class="form-group">
+          <label for="pwd">Password : </label>
+          <input class="form-control" type="password" name="password" id="pwd" placeholder="Enter Password" required/>
+          <div class="valid-feedback">Valid</div>
+          <div class="invalid-feedback">Please fill out this field ! </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message : </label>
+          <textarea class="form-control" rows="5" id="message" name="message" value="" placeholder="Enter your Message" required>
+          </textarea>
+        </div>
+
+        <div class="radio">
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" name="radio" class="form-check-input" /> RACING
+            </label>
+          </div>
+
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" name="radio" class="form-check-input" /> COMFORT
+            </label>
+          </div>
+        </div>
+
+        <div class="custom-file mb-3">
+          <input type="file" id="customFile" class="custom-file-input" name="" value="">
+          <label class="custom-file-label" for="customFile">UPLOAD YOUR CHECKBOOK</label>
+        </div>
+
+        <select class="custom-select mb-3" name="cars">
+          <option selected>SELECT ONE MODEL</option>
+          <option value="panigale">PANIGALE</option>
+          <option value="monster">MONSTER</option>
+          <option value="diavel">DIAVEL</option>
+          <option value="supersport">SUPERSPORT</option>
+        </select>
+
+        <div class="form-group form-check">
+          <label for="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember" value="" required /> I agree to Pay any Amount asked by the Company
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Please check the box to continue ! </div>
+          </label>
+        </div>
+
+        <button class="btn btn-outline-success" type="submit" name="button" value="submit">SUBMIT</button>
+
+      </form>
+    </div>
+
+    <div class="jumbotron bg-dark text-light mt-5 mb-0 pt-3">
+      <h1 style="font-family: 'Lora', serif;" class="text-center mb-5"> <a style="text-decoration:none;color:white;" href="https://www.ducati.com/in/en/home" target="_blank"> <i>DUCATI</i> </a> </h1>
+
+      <ul class="list-inline text-center">
+        <li class="list-inline-item"> <a style="text-decoration:none; color:white;" href="#"> TERMS OF USE </a> </li>
+        <li class="list-inline-item ml-5 mr-5"> <a class="ml-5 mr-5" style="text-decoration:none; color:white;" href="#"> PRIVACY INFORMATION </a> </li>
+        <li class="list-inline-item"> <a style="text-decoration:none; color:white;" href="#"> COOKIES INFORMATION </a> </li>
+      </ul>
+
+      <p class="text-center m-5">
+        Copyright © 2018 Ducati Motor Holding S.p.A – A Sole Shareholder Company -
+        A Company subject to the Management and Coordination activities of AUDI AG.
+        All rights reserved. VAT 05113870967
+      </p>
+    </div>
+
+  </body>
+</html>
